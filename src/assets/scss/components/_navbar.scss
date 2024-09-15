@@ -1,0 +1,37 @@
+@import "../variables";
+@import "../mixins";
+
+.navbar {
+  background-color: $bg-alt;
+  border-radius: 2rem 2rem 0 0;
+}
+.btn-nvp {
+  padding: 0 1rem;
+}
+
+.btn-nvp:hover {
+  background-color: $primary-color;
+  color: white;
+  font-weight: bold;
+}
+#txt-nvb,
+.txtbtn-nvb,
+.btn-nvp {
+  cursor: pointer;
+  user-select: none;
+}
+@include respond-to(medium) {
+  .navbar {
+    .txtbtn-nvb,
+    #txt-nvb {
+      margin-left: 1.5rem;
+    }
+  }
+  .navbar {
+    border-radius: 0 2rem 2rem 0;
+  }
+  .btn-nvp {
+    width: 100%;
+    padding: 1rem 0;
+  }
+}
