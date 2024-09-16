@@ -19,4 +19,4 @@ yarn build
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### API
-Consulta el API de la aplicación: [tasks](https://github.com/Citersito/tasks)
+Consulta el API de la aplicación: [tasks](https://github.com/Citersito/tasksAPI)
