@@ -1,0 +1,31 @@
+@import "../variables";
+@import "../mixins";
+
+#hme_tsk {
+	margin-top: 1rem;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	text-align: center;
+	gap: 0.5rem;
+	.tsks {
+		background-color: $bg-color;
+		border-radius: 1rem;
+	}
+	@include respond-to(large) {
+		grid-template-columns: repeat(4, 1fr);
+	}
+}
+
+#list-tsks {
+	.tasks {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		background-color: $bg-color;
+		border-radius: 1rem;
+		.tasks-txt {
+			margin-left: 1rem;
+			margin-right: 1rem;
+		}
+	}
+}
