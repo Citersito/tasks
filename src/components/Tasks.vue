@@ -1,10 +1,10 @@
 <template>
-	<h1>tasks {{ variable }}</h1>
+	<!-- <h1>tasks {{ variable }}</h1> -->
 	<taskslist />
 </template>
 
 <script>
-import apiClient from "@/services/api";
+// import apiClient from "@/services/api";
 import Taskslist from "./Taskslist.vue";
 
 export default {
@@ -12,28 +12,28 @@ export default {
 	components: {
 		Taskslist,
 	},
-	data() {
-		return {
-			datos: null,
-			variable: "",
-		};
-	},
-	mounted() {
-		this.fetchData();
-	},
-	methods: {
-		fetchData() {
-			apiClient
-				.get("/variable")
-				.then((response) => {
-					this.datos = response.data;
-					this.variable = response.data.variable;
-				})
-				.catch((error) => {
-					console.error("Hubo un error en la solicitud: ", error);
-				});
-		},
-	},
+	// data() {
+	// 	return {
+	// 		datos: null,
+	// 		variable: "",
+	// 	};
+	// },
+	// mounted() {
+	// 	this.fetchData();
+	// },
+	// methods: {
+	// 	fetchData() {
+	// 		apiClient
+	// 			.get("/variable")
+	// 			.then((response) => {
+	// 				this.datos = response.data;
+	// 				this.variable = response.data.variable;
+	// 			})
+	// 			.catch((error) => {
+	// 				console.error("Hubo un error en la solicitud: ", error);
+	// 			});
+	// 	},
+	// },
 };
 </script>
 
