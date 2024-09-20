@@ -11,10 +11,9 @@
 </template>
 
 <script>
-import DarkMode from "./DarkMode.vue";
 import Navbar from "./Navbar.vue";
 export default {
-	components: { Navbar, DarkMode },
+	components: { Navbar },
 };
 </script>
 

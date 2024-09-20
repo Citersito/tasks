@@ -22,6 +22,19 @@
 			background-color: $bg-color-dark;
 		}
 	}
+	form {
+		background-color: $bg-alt-dark;
+	}
+	input {
+		background-color: #33333300;
+		color: $bg-font-dark;
+	}
+	::-ms-reveal {
+		filter: invert(100%);
+	}
+	.toggle-mode {
+		background-color: $bg-color-dark;
+	}
 }
 
 // .dark-mode {

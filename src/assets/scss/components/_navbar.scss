@@ -16,6 +16,12 @@
 	color: white;
 	font-weight: bold;
 }
+#txt-nvb {
+	display: none;
+	@include respond-to(medium) {
+		display: block;
+	}
+}
 #txt-nvb,
 .txtbtn-nvb,
 .btn-nvp {

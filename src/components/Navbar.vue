@@ -21,12 +21,18 @@
 				<p class="txtbtn-nvb">Login</p>
 			</div></router-link
 		>
+		<DarkMode />
 	</nav>
 </template>
 
 <script>
+import DarkMode from "./DarkMode.vue";
+
 export default {
 	name: "Navbar",
+	components: {
+		DarkMode,
+	},
 };
 </script>
 

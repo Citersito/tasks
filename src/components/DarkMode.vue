@@ -1,6 +1,6 @@
 <template>
 	<button @click="toggleTheme" class="toggle-mode">
-		{{ isDarkMode ? "🌙 Dark Mode" : "☀️ Light Mode" }}
+		{{ isDarkMode ? "☀️" : "🌙" }}
 	</button>
 </template>
 
