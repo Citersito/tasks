@@ -26,30 +26,36 @@
 </template>
 
 <script>
-import { ref } from "vue";
+import apiClient from "../services/api"; // Asegúrate de que apiClient esté configurado correctamente
 
 export default {
-	name: "NewTask",
-	setup(_, { emit }) {
-		const taskName = ref("");
-		const category = ref("Work");
-		const dueDate = ref("");
-
-		const handleSubmit = () => {
-			const newTask = {
-				taskName: taskName.value,
-				category: category.value,
-				dueDate: dueDate.value,
-			};
-			emit("create-task", newTask);
-		};
-
+	data() {
 		return {
-			taskName,
-			category,
-			dueDate,
-			handleSubmit,
+			taskName: "",
+			category: "Work",
+			dueDate: "",
 		};
+	},
+	methods: {
+		async handleSubmit() {
+			try {
+				const response = await apiClient.post("/tasks", {
+					taskName: this.taskName,
+					category: this.category,
+					dueDate: this.dueDate,
+				});
+				console.log(response.data);
+				alert("Task created successfully!");
+				this.$emit("close"); // Cierra el modal
+			} catch (error) {
+				console.error(error);
+				alert("Failed to create task");
+			}
+		},
 	},
 };
 </script>
+
+<style scoped>
+/* Añade tus estilos aquí */
+</style>

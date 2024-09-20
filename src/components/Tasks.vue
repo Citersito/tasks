@@ -12,28 +12,6 @@ export default {
 	components: {
 		Taskslist,
 	},
-	// data() {
-	// 	return {
-	// 		datos: null,
-	// 		variable: "",
-	// 	};
-	// },
-	// mounted() {
-	// 	this.fetchData();
-	// },
-	// methods: {
-	// 	fetchData() {
-	// 		apiClient
-	// 			.get("/variable")
-	// 			.then((response) => {
-	// 				this.datos = response.data;
-	// 				this.variable = response.data.variable;
-	// 			})
-	// 			.catch((error) => {
-	// 				console.error("Hubo un error en la solicitud: ", error);
-	// 			});
-	// 	},
-	// },
 };
 </script>
 
