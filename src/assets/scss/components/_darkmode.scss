@@ -35,20 +35,12 @@
 	.toggle-mode {
 		background-color: $bg-color-dark;
 	}
+	.modal-content {
+		background-color: $bg-alt-dark;
+		color: $bg-font-dark;
+		select {
+			background-color: $bg-color-dark;
+			color: $bg-font-dark;
+		}
+	}
 }
-
-// .dark-mode {
-// 	body {
-// 		background-color: $bg-color-dark; // Color de fondo para el modo oscuro
-// 		color: $text-color-dark; // Color del texto para el modo oscuro
-// 	}
-
-// 	.content {
-// 		background-color: $bg-alt-dark; // Fondo de la sección de contenido en modo oscuro
-// 	}
-
-// 	.navbar {
-// 		background-color: $navbar-bg-dark; // Fondo de la barra de navegación en modo oscuro
-// 		color: $navbar-text-color-dark; // Color del texto en la barra de navegación en modo oscuro
-// 	}
-// }
